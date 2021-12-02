@@ -6,11 +6,10 @@ import kairos from '../assets/images/kairos.svg'
 import logo3 from '../assets/images/logo3.svg'
 
 
-const Home = ({ Navbar }) => {
+const Home = () => {
     return (
         <>
             <section className="home-header">
-                <Navbar />
                 <div className="row" id="row-correction">
                     <div className="col">
                         <img src={logo2} className="logo mobile-hidden" alt="logo" />
@@ -60,9 +59,22 @@ const Home = ({ Navbar }) => {
                     </div>
                 </div>     
             </section>
-            <section className="lights">
+            {/* <section className="lights">
                 <img src={logo3} className="logo" alt="logo" />
-            </section>
+            </section> */}
+            {/* <section className="mision-vision">
+                <h2>NUESTRO ENFOQUE / MISIÓN ></h2>
+                <div className="row" id="row-correction">
+                    <div className="col-lg">
+                        <span>M</span>
+                        <p>Construimos la mejor alternativa de vivienda en términos de ubicación, calidad y precio, satisfaciendo plenamente a cada uno de nuestros clientes esto se ha logra con el desarrollo integralmente un equipo de trabajo exitoso.</p>
+                    </div>
+                    <div className="col-lg">
+                        <span>V</span>
+                        <p>Ser la empresa líder de construcción y ventas en la ciudad de Quito, manteniendo un standar de calidad y satisfacción que le brinde a cada cliente trnquilidad en su inversion.</p>
+                    </div>
+                </div>
+            </section> */}
         </>
     )
 }

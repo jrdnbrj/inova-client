@@ -4,12 +4,12 @@ import Layout from './Layout'
 import Home from '../pages/Home'
 
 
-const WebRoutes = ({ Navbar }) => {
+const WebRoutes = () => {
   return (
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path='/' element={<Home Navbar={Navbar} />} />
+          <Route path='/' element={<Home />} />
         </Routes>
       </Layout>
     </BrowserRouter>

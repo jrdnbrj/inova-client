@@ -1,6 +1,6 @@
 // import { useLocation } from "react-router-dom"
 
-// import Navbar from './Navbar'
+import Navbar from './Navbar'
 // import Footer from './Footer'
 
 const Layout = ({ children }) => {
@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
     // ]
 
     return <>
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
         {/* { pathsWithFooter.includes(location.pathname) && <Footer /> } */}
     </>
