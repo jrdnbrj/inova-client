@@ -1,29 +1,33 @@
+import logo2 from '../assets/images/logo2.svg'
 
 
 
 const Footer = () => {
 
     return <>
-        <section className="row" id="row-correction">
-            <section className="col-12 col-lg-6 campo">
-                {/* <img src={campo} alt="Campo" /> */}
+        <section className="row footer" id="row-correction">
+            <section className="col-lg col-12 col-sm-6">
+                <img src={logo2} alt="logo" />
             </section>
-            <section className="col-12 col-lg-6 home-52">
+            <section className="col-lg col-12 col-sm-6">
+                <h3>ACERCA DE NOSOTROS</h3>
+                <span>Quiénes Somos</span>
+                <span>Inscripciones</span>
+                <span>Inicio</span>
+                <span>Calendario y Noticias</span>
+                <span>Contáctenos</span>
             </section>
-        </section>
-        <section className="footer row" id="row-correction">
-            <section className="col-lg-6">
-                {/* <img src={logo} alt="logo" className="logo-footer" /> */}
-                <span>Quito - Ecuador</span>
+            <section className="col-lg col-12 col-sm-6">
+                <h3>CONTÁCTENOS</h3>
+                <span>+506-8790-6062</span>
+                <span>info@lacarvas.com</span>
+                <span>www.lacarvas.com</span>
             </section>
-            <section className="col-lg-6 social">
-                <p>Suscríbete a nuestras noticias</p>
-                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-                    <i className="bi bi-instagram" />
-                </a>
-                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-                    <i className="bi bi-facebook" />
-                </a>
+            <section className="col-lg col-12 col-sm-6">
+                <h3>CAPACITACIONES</h3>
+                <i className="bi bi-whatsapp" />
+                <i className="bi bi-facebook" />
+                <i className="bi bi-instagram" />
             </section>
         </section>
     </>

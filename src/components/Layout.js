@@ -1,22 +1,23 @@
-// import { useLocation } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 
 import Navbar from './Navbar'
-// import Footer from './Footer'
+import Footer from './Footer'
 
 const Layout = ({ children }) => {
     
-    // const location = useLocation()
+    const location = useLocation()
     
-    // const pathsWithFooter = [
-    //     '/',
-    //     '/productos',
-    //     '/nosotros',
-    // ]
+    const pathsWithFooter = [
+        '/',
+        '/quienes-somos',
+        '/casas',
+        '/contactos'
+    ]
 
     return <>
         <Navbar />
         {children}
-        {/* { pathsWithFooter.includes(location.pathname) && <Footer /> } */}
+        { pathsWithFooter.includes(location.pathname) && <Footer /> }
     </>
 }
 
