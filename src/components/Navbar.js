@@ -16,7 +16,6 @@ const Navbar = () => {
                 autohide.classList.remove('scrolled-up')
                 autohide.classList.add('scrolled-down')
             } else {
-                autohide.classList.remove('scrolled-down')
                 autohide.classList.add('scrolled-up')
                 autohide.classList.add('navbar-sticky')
             }
@@ -41,7 +40,7 @@ const Navbar = () => {
                                 <Link className="nav-link active" to="/">Inicio</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active" to="/quienessomos">Quiénes somos</Link>
+                                <Link className="nav-link active" to="/quienes-somos">Quiénes somos</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/casas">Casas</Link>
