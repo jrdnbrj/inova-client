@@ -11,7 +11,9 @@ const Layout = ({ children }) => {
         '/',
         '/quienes-somos',
         '/casas',
-        '/contactos'
+        '/proyectos',
+        '/galeria',
+        '/contactos',
     ]
 
     return <>

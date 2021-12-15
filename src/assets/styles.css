@@ -757,7 +757,6 @@ html, body {
     padding: 3%;
 }
 
-
 .footer img {
     width: 70%;
     display: inline-block;
@@ -891,5 +890,252 @@ html, body {
 @media (max-width: 400px) {
     .us-header {
         padding-top: 100%;
+    }
+}
+
+/* PROYECTOS PROYECTOS */
+
+.proyectos {
+    padding: 15% 10% 10% 10%;
+}
+
+/* .proyectos img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: contain;
+} */
+
+.card {
+    /* box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.014), 0 6.7px 5.3px rgba(0, 0, 0, 0.02), 0 12.5px 10px rgba(0, 0, 0, 0.025), 0 22.3px 17.9px rgba(0, 0, 0, 0.03), 0 41.8px 33.4px rgba(0, 0, 0, 0.036), 0 100px 80px rgba(0, 0, 0, 0.05); */
+    border: 0;
+}
+.card--image {
+    height: 100%;
+}
+.card--image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+.card--info {
+    --size: 20px;
+    width: var(--size);
+    height: var(--size);
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
+    position: absolute;
+    transition: width 550ms ease, height 550ms ease, right 550ms ease, background 550ms ease;
+    overflow: hidden;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.014), 0 6.7px 5.3px rgba(0, 0, 0, 0.02), 0 12.5px 10px rgba(0, 0, 0, 0.025), 0 22.3px 17.9px rgba(0, 0, 0, 0.03), 0 41.8px 33.4px rgba(0, 0, 0, 0.036), 0 100px 80px rgba(0, 0, 0, 0.05), 0 0px 2.2px rgba(0, 0, 0, 0.045), 0 0px 5.3px rgba(0, 0, 0, 0.065), 0 0px 10px rgba(0, 0, 0, 0.08), 0 0px 17.9px rgba(0, 0, 0, 0.095), 0 0px 33.4px rgba(0, 0, 0, 0.115), 0 0px 80px rgba(0, 0, 0, 0.16), 0 0.2px 2.2px rgba(0, 0, 0, 0.014), 0 0.6px 5.3px rgba(0, 0, 0, 0.02), 0 1.1px 10px rgba(0, 0, 0, 0.025), 0 2px 17.9px rgba(0, 0, 0, 0.03), 0 3.8px 33.4px rgba(0, 0, 0, 0.036), 0 9px 80px rgba(0, 0, 0, 0.05);
+}
+.card--info::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.25) 50%, transparent 100%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 550ms ease;
+}
+.card--info.info--1 {
+    bottom: 20%;
+    right: 76%;
+}
+.card--info.info--1 .info--image img {
+    top: -249%;
+    left: -95%;
+}
+.card--info.info--2 {
+    bottom: 27%;
+    right: 37%;
+}
+.card--info.info--2 .info--image img {
+    right: -50%;
+    bottom: -41%;
+}
+.card--info .icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card--info .icon i {
+    color: white;
+}
+.card--info .info--text {
+    display: block;
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-family: Poppins Light;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(25%);
+    transition: opacity 250ms ease, transform 250ms ease;
+}
+.card--info .info--image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card--info .info--image img {
+    position: absolute;
+    width: 340%;
+    height: 340%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 550ms ease;
+}
+.card:hover .card--info {
+    --size: 120px;
+}
+.card:hover .card--info::after {
+    opacity: 1;
+}
+.card:hover .card--info.info--1 {
+    /* top: 15%; */
+    right: 47%;
+    transition-delay: 50ms;
+}
+.card:hover .card--info.info--2 {
+    right: 5%;
+}
+.card:hover .card--info .info--image img {
+    opacity: 1;
+}
+.card:hover .card--info .info--text {
+    transition-delay: 550ms;
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+
+.proyectos .row {
+    margin: 5% 0
+}
+
+.proyectos .row .col-lg-6:last-child {
+    padding: 5%;
+}
+
+.proyectos .col-lg-6 {
+    padding: 0;
+}
+
+.proyectos h1 {
+    letter-spacing: 12px;
+}
+
+#nuestros {
+    color: #45AFB7;
+    font-size: 2rem;
+    font-family: Poppins Light;
+}
+
+#proyectos {
+    color: #16243E;
+    font-size: 2.6rem;
+    font-family: Poppins SemiBold;
+}
+
+.proyectos h2 {
+    letter-spacing: 8px;
+    color: #3A2B6C;
+    font-size: 2rem;
+    font-family: Poppins Light;
+    margin-bottom: 7%;
+}
+
+.proyectos p {
+    font-family: Poppins Light;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+@media (max-width: 991px) {
+    .proyectos {
+        padding: 25% 10% 10% 10%;
+    }
+    #nuestros {
+        font-size: 2.7rem;
+    }
+    #proyectos {
+        font-size: 3.5rem;
+    }
+    .proyectos h2 {
+        font-size: 2.5rem;
+        margin-bottom: 4%;
+    }
+    .proyectos p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .proyectos {
+        padding: 30% 10% 10% 10%;
+    }
+    #nuestros {
+        font-size: 1.8rem;
+    }
+    #proyectos {
+        font-size: 2.5rem;
+    }
+    .proyectos h2 {
+        font-size: 1.6rem;
+    }
+    .proyectos p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    #nuestros {
+        font-size: 1.2rem;
+    }
+    #proyectos {
+        font-size: 1.7rem;
+    }
+    .proyectos h2 {
+        font-size: 1.2rem;
+    }
+    .proyectos p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .proyectos {
+        padding: 40% 10% 10% 10%;
+    }
+    #nuestros {
+        font-size: 0.8rem;
+    }
+    #proyectos {
+        font-size: 1.3rem;
+    }
+    .proyectos h2 {
+        font-size: 0.9rem;
+    }
+    .proyectos p {
+        font-size: 0.7rem;
     }
 }
