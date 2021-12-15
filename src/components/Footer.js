@@ -1,5 +1,6 @@
-import logo2 from '../assets/images/logo2.svg'
+import { Link } from 'react-router-dom'
 
+import logo2 from '../assets/images/logo2.svg'
 
 
 const Footer = () => {
@@ -11,17 +12,15 @@ const Footer = () => {
             </section>
             <section className="col-lg col-12 col-sm-6">
                 <h3>ACERCA DE NOSOTROS</h3>
-                <span>Quiénes Somos</span>
-                <span>Inscripciones</span>
-                <span>Inicio</span>
-                <span>Calendario y Noticias</span>
-                <span>Contáctenos</span>
+                <Link className="rrd-link" to="/quienes-somos">Quiénes Somos</Link>
+                <Link className="rrd-link" to="/proyectos">Proyectos</Link>
+                <Link className="rrd-link" to="/contactos">Contactos</Link>
+                <Link className="rrd-link" to="/galeria">Galería</Link>
             </section>
             <section className="col-lg col-12 col-sm-6">
                 <h3>CONTÁCTENOS</h3>
-                <span>+506-8790-6062</span>
+                <span>+593 99 8799 9739</span>
                 <span>info@lacarvas.com</span>
-                <span>www.lacarvas.com</span>
             </section>
             <section className="col-lg col-12 col-sm-6">
                 <h3>CAPACITACIONES</h3>

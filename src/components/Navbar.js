@@ -43,10 +43,16 @@ const Navbar = () => {
                                 <Link className="nav-link active" to="/quienes-somos">Quiénes somos</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/casas">Casas</Link>
+                                <Link className="nav-link" to="/proyectos">Proyectos</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contactos">Contactos</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/galeria">Galería</Link>
+                            </li>
+                            <li className="nav-item">
+                                <span className="nav-link no-link">0998799739</span>
                             </li>
                         </ul>
                     </div>

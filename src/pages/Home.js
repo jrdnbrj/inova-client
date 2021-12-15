@@ -27,7 +27,7 @@ const Home = () => {
                         <div className="home-contacts">
                             <span id="text-1">OTRA MANERA DE GUIAR</span>
                             <span id="text-2">¿Quiéres un nuevo concepto para tus fotos? Nosotros te damos las herramientas y visión de tu imagen</span>
-                            <span id="numbers">0994922436 - 0995424465</span>
+                            <span id="numbers">0998799739</span>
                             <button id="llamanos">
                                 <span>LLÁMANOS</span>
                             </button>
