@@ -25,8 +25,8 @@ const QuienesSomos = () => {
                                 <p>Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto </p>
                             </div>
                         </div>
-                        <h3>SOMOS</h3>
-                        <p>Quieres un nuevo concepto?</p>
+                        <h3>Alfonso García</h3>
+                        <p>Gerente de Proyecto</p>
                     </div>
                     <div className="col-lg-3 col-12 col-sm-6">
                         <div className="somos-container">
@@ -36,8 +36,8 @@ const QuienesSomos = () => {
                                 <p>Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto </p>
                             </div>
                         </div>
-                        <h3>SOMOS</h3>
-                        <p>Quieres un nuevo concepto?</p>
+                        <h3>Wendy Jácome</h3>
+                        <p>Gerente de Ventas</p>
                     </div>
                     <div className="col-lg-3 col-12 col-sm-6">
                         <div className="somos-container">
@@ -47,8 +47,8 @@ const QuienesSomos = () => {
                                 <p>Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto </p>
                             </div>
                         </div>
-                        <h3>SOMOS</h3>
-                        <p>Quieres un nuevo concepto?</p>
+                        <h3>Elizabeth León</h3>
+                        <p>Gerente General</p>
                     </div>
                     <div className="col-lg-3 col-12 col-sm-6">
                         <div className="somos-container">
@@ -58,8 +58,8 @@ const QuienesSomos = () => {
                                 <p>Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto, Quieres un nuevo concepto </p>
                             </div>
                         </div>
-                        <h3>SOMOS</h3>
-                        <p>Quieres un nuevo concepto?</p>
+                        <h3>Guillermo Enriquez</h3>
+                        <p>Arquitecto</p>
                     </div>
                 </div>
             </section>
