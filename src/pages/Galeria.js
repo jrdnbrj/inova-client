@@ -14,30 +14,38 @@ import galeria13 from '../assets/images/galeria13.jpg'
 import galeria14 from '../assets/images/galeria14.jpg'
 import galeria15 from '../assets/images/galeria15.jpg'
 
+import { useState } from 'react'
+
 import GaleryModal from '../components/GaleryModal'
 
+const images = [
+    galeria1, galeria2, galeria3, galeria4, galeria5, 
+    galeria6, galeria7, galeria8, galeria9, galeria10, 
+    galeria11, galeria12, galeria13, galeria14, galeria15
+]
 
 const Galeria = () => {
+
+    const [selectedImage, setSelectedImage] = useState(null)
+
+    const openModal = img => {
+        setSelectedImage(img)
+
+        const modal = document.getElementById('modal')
+        modal.classList.add('show')
+    }
+
     return <>
-        <GaleryModal />
+        <GaleryModal image={selectedImage} />
         <div className="galeria">
             <h1>GALERÍA</h1>
             <div className="galeria-container">
-                <img src={galeria1} alt="galeria1" />
-                <img src={galeria2} alt="galeria2" />
-                <img src={galeria3} alt="galeria3" />
-                <img src={galeria4} alt="galeria4" />
-                <img src={galeria5} alt="galeria5" />
-                <img src={galeria6} alt="galeria6" />
-                <img src={galeria7} alt="galeria7" />
-                <img src={galeria8} alt="galeria8" />
-                <img src={galeria9} id="galeria9" alt="galeria9" />
-                <img src={galeria10} alt="galeria10" />
-                <img src={galeria11} id="galeria11" alt="galeria11" />
-                <img src={galeria12} alt="galeria12" />
-                <img src={galeria13} alt="galeria13" />
-                <img src={galeria14} alt="galeria14" />
-                <img src={galeria15} alt="galeria15" />
+                {images.map((image, i) =>
+                    <img 
+                        key={i} src={image} id={`galeria${i+1}`} alt="galeria" 
+                        onClick={() => openModal(image)} 
+                    />
+                )}
             </div>
         </div>
     </>

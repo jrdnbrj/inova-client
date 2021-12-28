@@ -1210,48 +1210,52 @@ html, body {
 
 /* MODAL MODAL MODAL */
 
-.modal {
+.show {
     display: block;
-    margin: auto;
-    position: fixed;
-    z-index: 1;
-    padding-top: 8%;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    /* overflow: auto; */
-    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.5);
 }
 
+/* .modal { */
+    /* display: block; */
+    /* position: fixed; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* z-index: 100; */
+    /* height: 1000px; */
+/* } */
+
 .modal-body {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    /* border: 1px solid #888; */
-    width: 80%;
-    filter: drop-shadow( 0px 0px 35px rgb(0, 0, 0));
+    position: relative;
+    padding: 0rem;
+    background-color: #FFF;
+    filter: drop-shadow( 0px 0px 20px rgb(0, 0, 0));
 }
 
 .modal-close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
+    position: absolute;
+    color: #FFF;
+    right: 10px;
+    filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+    font-size: 40px;
     font-weight: bold;
+    cursor: pointer;
 }
   
 .modal-close:hover,
 .modal-close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+    color: #EEE;
 }
 
 .modal-body img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* display: inline-block; */
-    /* height: 100%; */
-    /* vertical-align: middle; */
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 900px;
+        margin: auto auto;
+    }
 }
