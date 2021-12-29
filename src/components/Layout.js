@@ -14,6 +14,7 @@ const Layout = ({ children }) => {
         '/proyectos',
         '/galeria',
         '/contactos',
+        '/kairos'
     ]
 
     return <>

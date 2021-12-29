@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import logo2 from '../assets/images/logo2.svg'
 import building2 from '../assets/images/building2.png'
 import building3 from '../assets/images/building3.png'
@@ -12,9 +14,10 @@ import logo3 from '../assets/images/logo3.svg'
 import MisionVision from '../components/MisionVision'
 import ConctactForm from '../components/ContactForm'
 
+
 const Home = () => {
 
-    const kairosForm = 'Concebido para la vida ejecutiva de alto rendimiento en la zona de más alta demanda de la ciudad, KAIROS se destaca por su exclusividad, diseño y ubicación estratégica en la ciudad de Quito.'
+    const kairosForm = 'Concebido para la vida ejecutiva de alto rendimiento en la zona de la mas alta plusvalia de ciudad. KAIROS se destaca por su exclusividad, diseño y ubicación estrategica. Su diseño permite aprovechar al maximo la luminosidad y disfrutar de una hermosa vista en cada uno de los departamentos.'
 
     return (
         <>
@@ -57,12 +60,16 @@ const Home = () => {
                     <div className="kairos-info">
                         <img src={kairos} className="kairos" alt="kairos" />
                         <p>{kairosForm}</p>
-                        <button id="contactanos">
-                            <span>Contáctanos</span>
-                        </button>
-                        <button id="ver-mas">
-                            <span>Ver más</span>
-                        </button>
+                        <Link to="/contactos">
+                            <button id="contactanos">
+                                <span>Contáctanos</span>
+                            </button>
+                        </Link>
+                        <Link to="/kairos">
+                            <button id="ver-mas">
+                                <span>Ver más</span>
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>     
@@ -80,7 +87,7 @@ const Home = () => {
                     <span>SIGUIENTE</span>
                 </button>
             </section>
-            <ConctactForm onHome={true} />
+            <ConctactForm onHome />
         </>
     )
 }

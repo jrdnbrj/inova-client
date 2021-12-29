@@ -1,7 +1,7 @@
 import building9 from '../assets/images/building9.png'
 
 
-const ContactForm = ({ onHome }) => {
+const ContactForm = ({ onHome, image }) => {
 
     const sendForm = e => {
         e.preventDefault()
@@ -9,16 +9,17 @@ const ContactForm = ({ onHome }) => {
     }
 
     return (
-        <section className="home-form">
+        <section className={onHome ? 'home-form' : 'home-form-2'}>
             <div className="row" id="row-correction">
-                {/* <div className="col-lg"> */}
-                <div className={`col ${onHome ? 'mobile-hidden' : ''}`}>
-                    <img src={building9} id="b-9" alt="building" />
+                <div className={`col-lg ${onHome ? ' mobile-hidden' : ''}`}>
+                    {image ? 
+                        <img src={image} alt="galeria" /> :
+                        <img src={building9} id="b-9" alt="building" /> }
                 </div>
                 <div className="col-lg">
                     <form onSubmit={sendForm}>
-                        <h2>Invierte de una manera inteligente y estratégica</h2>
-                        <p>No mas alquiler, compra tu departamento listo para estrenar. Kairos, la mejor opción para tí.</p>
+                        <h2>En INOVA Constructores</h2>
+                        <p>Deseamos escucharte, por favor comunicate con nosotros.</p>
                         <div className="form-floating">
                             <input type="text" className="form-control" placeholder="Kairos" />
                             <label>Nombre</label>

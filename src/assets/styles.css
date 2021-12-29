@@ -363,6 +363,10 @@ html, body {
     color: gray;
 }
 
+.kairos-info a {
+    text-decoration: none;
+}
+
 .kairos-info button:after {
     content: "";
     position: absolute;
@@ -663,7 +667,7 @@ html, body {
 .home-form p {
     font-family: Poppins Light;
     font-size: 1rem;
-    margin: 5% 0;
+    margin: 0 0 5% 0;
     text-align: justify;
 }
 
@@ -736,6 +740,105 @@ html, body {
         height: 8.5rem;
     }
     .home-form form button {
+        border-bottom-left-radius: 38px;
+        border-top-right-radius: 18px;
+        padding: 0.5rem 2rem;
+        font-size: 2rem;
+    }
+}
+
+.home-form-2 .col-lg {
+    padding: 0;
+}
+
+.home-form-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-form-2 h2 {
+    font-family: Poppins SemiBold;
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.home-form-2 p {
+    font-family: Poppins Light;
+    font-size: 1rem;
+    margin: 0 0 5% 0;
+    text-align: justify;
+}
+
+.home-form-2 form {
+    font-family: Poppins Light;
+    margin: 10%;
+    padding-top: 4rem;
+}
+
+.home-form-2 form .form-control {
+    display: block;
+    background-color: transparent;
+    border: 3px solid #000;
+    border-bottom-left-radius: 38px;
+    border-top-right-radius: 18px;
+    padding: 0 1.8rem;
+    margin: 3% 0;
+    font-size: 1rem;
+}
+
+.home-form-2 form label {
+    padding: 0.9rem 0.5rem 0.9rem 2rem;
+    font-size: 1rem;
+}
+
+.home-form-2 form div .msg {
+    height: 6.5rem;
+    overflow: hidden;
+}
+
+.home-form-2 form button {
+    background-color: #000;
+    border: 0;
+    border-radius: 3px;
+    border-bottom-left-radius: 38px;
+    border-top-right-radius: 18px;
+    padding: 0.8rem 2.5rem;
+    font-family: Poppins Light;
+    font-size: 1.2rem;
+    color: #FFF;
+    width: 100%;
+    text-align: start;
+}
+
+.home-form-2 form button:hover {
+    background-color: rgba(255, 255, 255, 0.932);
+}
+
+@media (max-width: 991px) {
+    .home-form-2 h2 {
+        font-size: 2.5rem;
+    }
+    .home-form-2 p {
+        font-size: 1.5rem;
+        margin: 5% 0;
+    }
+    .home-form-2 form .form-control {
+        padding: 2rem 1.8rem;
+        font-size: 1.5rem;
+        transition: all 0.5s;
+    }
+    .home-form-2 form .form-control:focus {
+        padding: 3rem 0.5rem 2rem 2rem;
+    }
+    .home-form-2 form label {
+        padding: 0.9rem 0.5rem 0.9rem 2rem;
+        font-size: 1.1rem;
+    }
+    .home-form-2 form div .msg {
+        height: 8.5rem;
+    }
+    .home-form-2 form button {
         border-bottom-left-radius: 38px;
         border-top-right-radius: 18px;
         padding: 0.5rem 2rem;
@@ -1215,16 +1318,6 @@ html, body {
     background-color: rgba(0,0,0,0.5);
 }
 
-/* .modal { */
-    /* display: block; */
-    /* position: fixed; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* z-index: 100; */
-    /* height: 1000px; */
-/* } */
-
 .modal-body {
     position: relative;
     padding: 0rem;
@@ -1258,4 +1351,184 @@ html, body {
         max-width: 900px;
         margin: auto auto;
     }
+}
+
+.kairos {
+    padding: 10% 10% 10% 10%;
+}
+
+.kairos > .amenities {
+    padding: 0;
+}
+
+.kairos h1 {
+    font-family: Poppins Light;
+    font-size: 2rem;
+    letter-spacing: 18px;
+    color: #C37B52;
+}
+
+.kairos-logo {
+    width: 20rem;
+    height: 100%;
+}
+
+.kairos-header {
+    margin: 3rem 0;
+}
+
+.kairos-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kairos-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kairos-content .row .col-lg-6:first-child {
+    padding: 0;
+}
+
+
+.kairos-content .row .col-lg-6:last-child {
+    padding: 0;
+    display: table;
+}
+
+.kairos-text {
+    padding: 0 0 0 2rem !important;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.kairos-content p {
+    font-family: Poppins Light;
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0;
+}
+
+.kairos-content p:last-child {
+    margin-top: 1rem;
+}
+
+.kairos-features {
+    padding: 3rem 0;
+}
+
+.kairos-features .row .col-lg-6:last-child {
+    padding: 0;
+}
+
+.kairos-features .row .col-lg-6:first-child {
+    padding: 0;
+    display: table;
+}
+
+.kairos-features h2 {
+    font-family: Poppins Light;
+    font-size: 1.7rem;
+    color: #C37B52;
+    margin-bottom: 1.5rem;
+    letter-spacing: 8px;
+}
+
+.kairos-features img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kairos-text-2 {
+    padding: 0 2rem 0 0 !important;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.kairos-text-2 p {
+    font-family: Poppins Light;
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0;
+}
+
+.kairos-plans h2, .kairos-suite h2 {
+    font-family: Poppins Light;
+    font-size: 1.7rem;
+    color: #C37B52;
+    margin-bottom: 1.5rem;
+    letter-spacing: 8px;
+}
+
+.kairos-plans span, .kairos-suite span {
+    font-family: Poppins Light;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 3px;
+}
+
+.area {
+    margin-right: 4rem;
+}
+
+.kairos-plans .row .col-lg-6,
+.kairos-suite .row .col-lg-6 {
+    padding: 0;
+    height: 100%;
+}
+
+.kairos-plans img, .kairos-suite img {
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 2rem auto;
+}
+
+.amenities {
+    /* padding: 3rem 0; */
+}
+
+.amenities h2 {
+    font-family: Poppins Light;
+    font-size: 1.7rem;
+    color: #C37B52;
+    margin-bottom: 1.5rem;
+    letter-spacing: 8px;
+    margin-left: 10%;
+}
+
+.amenities-carousel {
+    overflow: hidden;
+}
+
+.amenities-carousel img {
+    height: 330px;
+    margin: 0 0.4rem;
+}
+
+.amenities-carousel img:hover {
+    transform: scale(0.99);
+}
+
+.location h2 {
+    font-family: Poppins Light;
+    font-size: 1.7rem;
+    color: #C37B52;
+    margin-bottom: 1.5rem;
+    letter-spacing: 8px;
+}
+
+.location img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contacts {
+
 }
