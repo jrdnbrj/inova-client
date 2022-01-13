@@ -1,9 +1,12 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-import logo2 from '../assets/images/logo2.svg'
+import inovaExperiencia from '../assets/videos/inova_experiencia.mp4'
+import inovaExperienciaOgg from '../assets/videos/inova_experiencia.ogg'
+
+import logo from '../assets/images/logo.svg'
 import building2 from '../assets/images/building2.png'
-import building3 from '../assets/images/building3.png'
-import building4 from '../assets/images/building4.png'
+import building3 from '../assets/images/building3.jpg'
 import building5 from '../assets/images/building5.png'
 import building6 from '../assets/images/building6.png'
 import building7 from '../assets/images/building7.png'
@@ -19,26 +22,20 @@ const Home = () => {
 
     const kairosForm = 'Concebido para la vida ejecutiva de alto rendimiento en la zona de la mas alta plusvalia de ciudad. KAIROS se destaca por su exclusividad, diseño y ubicación estrategica. Su diseño permite aprovechar al maximo la luminosidad y disfrutar de una hermosa vista en cada uno de los departamentos.'
 
+    useEffect(() => {
+        const video = document.getElementById('inova-experiencia')
+        video.play()
+    }, [])
+
     return (
         <>
-            <section className="home-header">
-                <div className="row" id="row-correction">
-                    <div className="col">
-                        <img src={logo2} className="logo mobile-hidden" alt="logo" />
-                    </div>
-                    <div className="col">
-                        <div className="home-contacts">
-                            <span id="text-1">OTRA MANERA DE GUIAR</span>
-                            <span id="text-2">¿Quiéres un nuevo concepto para tus fotos? Nosotros te damos las herramientas y visión de tu imagen</span>
-                            <span id="numbers">0998799739</span>
-                            <button id="llamanos">
-                                <span>LLÁMANOS</span>
-                            </button>
-                            <button id="departamentos">
-                                <span>DEPARTAMENTOS</span>
-                            </button>
-                        </div>
-                    </div>
+            <section className="video-container">
+                <video muted loop id="inova-experiencia">
+                    <source src={inovaExperiencia} type="video/mp4" />
+                    <source src={inovaExperienciaOgg} type="video/ogg" />
+                </video>
+                <div className="video-text">
+                    <h1>CONSTRUYENDO HOGARES</h1>
                 </div>
                 <section className="socials">
                     <i className="bi bi-facebook" />
@@ -46,19 +43,30 @@ const Home = () => {
                     <i className="bi bi-instagram" />
                 </section>
             </section>
+            <section className="home-info">
+                <img src={logo} alt="logo" />
+                <h2>ENFOCADOS EN CREAR AMBIENTES INNOVADORES</h2>
+                <p>Somos una compañía constructora que cuenta con amplia experiencia en la ejecución de proyectos de calidad y con la capacidad de enfrentar nuevos retos los cuales nos impulsan a seguir creciendo como una empresa innovadora que brinda las mejores condiciones de vida a los quiteños.</p>
+                <Link to="/contactos">
+                    <button id="llamanos">
+                        <span>QUIENES SOMOS</span>
+                    </button>
+                </Link>
+                <Link to="/galeria">
+                    <button id="departamentos">
+                        <span>PROYECTOS</span>
+                    </button>
+                </Link>
+            </section>
             <div className="row" id="row-correction">
                 <div className="col-lg kairos-col">
                     <div className="kairos-col-item">
-                        <div className="kairos-images">
-                            <img src={building2} className="b-2" alt="building" />
-                            <img src={building3} className="b-3" alt="building" />
-                            <img src={building4} className="b-4" alt="building" />
-                        </div>
+                        <img src={building3} className="home-kairos" alt="building" />
                     </div>
                 </div>
                 <div className="col-lg kairos-col">
                     <div className="kairos-info">
-                        <img src={kairos} className="kairos" alt="kairos" />
+                        <img src={kairos} className="kairos-logo" alt="kairos" />
                         <p>{kairosForm}</p>
                         <Link to="/contactos">
                             <button id="contactanos">
@@ -73,10 +81,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>     
-            <section className="lights">
+            {/* <section className="lights">
                 <img src={logo3} className="logo" alt="logo" />
-            </section>
-            <MisionVision />
+            </section> */}
             <section className="home-proyectos">
                 <h2>PROYECTOS</h2>
                 <img src={building5} id="b-5" alt="building" />
@@ -86,6 +93,52 @@ const Home = () => {
                 <button>
                     <span>SIGUIENTE</span>
                 </button>
+            </section>
+            <MisionVision />
+            <section className="home-nosotros">
+                <h2>MÁS SOBRE NOSOTROS</h2>
+                <div className="row">
+                    <div className="cola">
+                        <div className="data-text">
+                            Clientes Atendidos
+                        </div>
+                        <div className="home-numbers">
+                            36.218
+                        </div>
+                    </div>
+                    <div className="cola">
+                        <div className="data-text">
+                            Unidades Vendidad y Arrendadas
+                        </div>
+                        <div className="home-numbers">
+                            36.218
+                        </div>
+                    </div>
+                    <div className="cola">
+                        <div className="data-text">
+                            Años de experiencia
+                        </div>
+                        <div className="home-numbers">
+                            36.218
+                        </div>
+                    </div>
+                    <div className="cola">
+                        <div className="data-text">
+                            Proyectos Comercializados
+                        </div>
+                        <div className="home-numbers">
+                            36.218
+                        </div>
+                    </div>
+                    <div className="cola">
+                        <div className="data-text">
+                            Proyectos Construidos
+                        </div>
+                        <div className="home-numbers">
+                            36.218
+                        </div>
+                    </div>
+                </div>
             </section>
             <ConctactForm onHome />
         </>

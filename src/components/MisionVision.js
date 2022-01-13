@@ -5,7 +5,7 @@ const MisionVision = () => {
 
     return <>
         <section className="mision-vision">
-            <h2>MISIÓN / VISIÓN ></h2>
+            <h2>MISIÓN / VISIÓN</h2>
             <div className="row" id="row-correction">
                 <div className="col-lg">
                     <span>M</span>

@@ -23,7 +23,7 @@ const media = [
 const Kairos = () => {
     return <>
         <div className="kairos">
-            <h1>PROYECTO</h1>
+            <h1>DEPARTAMENTOS</h1>
             <img src={karios} className="kairos-logo" alt="kairos" />
             <section className="kairos-header">
                 <img src={kairos1} alt="kairos" />

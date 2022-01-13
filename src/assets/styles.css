@@ -46,8 +46,7 @@ html, body {
 /* HEADER HEADER */
 
 .navbar-container {
-    background-color: #000 !important;
-    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .nav-item {
@@ -120,78 +119,149 @@ html, body {
 
 /* HOME HOME */
 
-.home-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url('../assets/images/building1.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.home-header > .navbar {
-    opacity: 0.5 !important;
-}
-
-.home-header .socials {
+.video-container .socials {
     position: absolute;
     top: 20rem;
     right: 2rem;
 }
 
-.home-header .socials i {
+.video-container .socials i {
     display: block;
     font-size: 2rem;
     color: #FFF;
     margin: 5px;
+    filter: drop-shadow(0 0 7px #000);
 }
 
-.home-header .socials i:hover {
+.video-container .socials i:hover {
     color: #e6e6e6;
     cursor: pointer;
 }
 
-.home-header .col {
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    padding: 9rem 0;
+@media (max-width: 400px) {
+    .video-container .socials {
+        top: 6.5rem;
+        right: 2rem;
+    }
 }
 
-.home-header .logo {
-    width: 12rem;
-    margin: 0 0 0 9rem;
+@media (max-width: 350px) {
+    .video-container.socials {
+        top: 5rem;
+        right: 2rem;
+    }
+    .video-container.socials i {
+        font-size: 1.6rem;
+        margin: 5px;
+    }
 }
 
-.home-contacts {
-    margin: 0 7rem 0 3rem;
+.video-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -10px;
 }
 
-.home-contacts span {
-    display: block;
+#inova-experiencia {
+    width: 100%;
 }
 
-.home-contacts #text-1 {
+.video-text {
+    position: absolute;
+    text-align: center;
+    padding: 0 25%;
+    width: 100%;
+    top: 50%;
+}
+
+.video-text h1 {
     color: #fff;
-    font-size: 2.3rem;
     font-family: Poppins SemiBold;
     letter-spacing: 8px;
+    font-size: 2.5rem;
+    filter: drop-shadow( 0px 0px 7px #000);
 }
 
-.home-contacts #text-2 {
+@media (max-width: 991px) {
+    #inova-experiencia {
+        width: 150%;
+        transform: translateX(-10%);
+    }
+}
+
+@media (max-width: 850px) {
+    .video-text {
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 650px) {
+    .video-text {
+        padding: 0 10%;
+    }
+    #inova-experiencia {
+        width: 220%;
+    }
+    .video-text h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .video-text {
+        padding: 0 10%;
+    }
+    #inova-experiencia {
+        width: 240%;
+    }
+    .video-text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .video-text {
+        padding: 0 10%;
+        top: 60%;
+    }
+    #inova-experiencia {
+        width: 280%;
+        transform: translateX(-15%);
+    }
+    .video-text h1 {
+        font-size: 1.2rem;
+        letter-spacing: 7px;
+    }
+}
+
+.home-info {
+    background-color: #021E3B;
+    text-align: center;
+    padding: 5rem 13rem;
+}
+
+.home-info img {
+    width: 10%;
+    height: auto;
+}
+
+.home-info h2 {
     color: #fff;
-    font-size: 1.1rem;
-    font-family: Poppins Regular;
-    margin: 1.5rem 0;
+    font-family: Poppins SemiBold;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin: 3rem;
+    /* padding: 0 12rem; */
 }
 
-.home-contacts #numbers {
+.home-info p {
     color: #fff;
-    font-size: 1.1rem;
-    font-family: Poppins Regular;
-    margin-bottom: 2rem;
+    font-family: Poppins Light;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
 }
 
-.home-contacts button {
+.home-info button {
     display: block;
     background-color: transparent;
     color: #FFF;
@@ -201,24 +271,24 @@ html, body {
     border-radius: 12px;
     letter-spacing: 5px;
     padding: 0.5rem 1.65rem;
-    margin: 1rem 0;
+    margin: 1rem auto;
     transition: all 0.5s
 }
 
-.home-contacts button:hover {
+.home-info button:hover {
     background-color: #3A2B6C;
     color: #fff;
     opacity: 0.75;
     padding-right: 75px;
 }
 
-.home-contacts button span {
+.home-info button span {
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-.home-contacts button span:after {
+.home-info button span:after {
     content: '\2192';
     position: absolute;
     opacity: 0;
@@ -226,98 +296,25 @@ html, body {
     transition: 0.5s;
 }
 
-.home-contacts button:hover span:after {
+.home-info button:hover span:after {
     opacity: 1;
     right: -40px;
 }
 
-.home-contacts #llamanos {
+#llamanos {
     border-start-start-radius: 50px;
 }
 
-.home-contacts #departamentos {
+#departamentos {
     border-end-end-radius: 50px;
 }
 
-@media (max-width: 991px) {
-    .home-header .col:first-child {
-        display: none;
-    }
-    .home-header .col {
-        padding: 9rem 10rem 9rem 2.5rem;
-    }
-    .home-contacts {
-        margin: 0 1rem;
-    }
-    .home-contacts button {
-        font-size: 1rem;
-        border: 4px solid #3A2B6C;
-        border-radius: 12px;
-        letter-spacing: 5px;
-        padding: 0.5rem 1.5rem;
-        margin: 1rem 0;
-    }
-    .home-contacts button span:after {
-        content: '';
-    }
-}
-
-@media (max-width: 400px) {
-    .home-contacts {
-        margin: 0 2.4rem 0 1rem;
-    }
-    .home-header .col {
-        padding: 10rem 2rem 10rem 2rem;
-    }
-    .home-header .socials {
-        top: 6.5rem;
-        right: 2rem;
-    }
-}
-
-@media (max-width: 350px) {
-    .home-header .col {
-        padding: 10rem 2rem 10rem 2rem;
-    }
-    .home-contacts button {
-        font-size: 0.75rem;
-        border: 3px solid #3A2B6C;
-        letter-spacing: 3px;
-        padding: 0.5rem 1rem;
-    }
-    .home-header .socials {
-        top: 5rem;
-        right: 2rem;
-    }
-    .home-header .socials i {
-        font-size: 1.6rem;
-        margin: 5px;
-    }
-}
-
-.kairos-images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-}
-
-.kairos-images img {
-    width: 100%;
-}
-
-.kairos-images .b-2 {
-    grid-column: 1;
-    grid-row: 1 / 5;
-}
-
-.kairos-images .b-3 {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.kairos-images .b-4 {
-    grid-column: 2;
-    grid-row: 3;
+.home-kairos {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 50%;
 }
 
 .kairos-col {
@@ -326,7 +323,7 @@ html, body {
 
 .kairos-info {
     display: table-cell;
-    padding: 0 6rem;
+    padding: 6rem;
     height: 100%;
     vertical-align: middle;
 }
@@ -376,7 +373,6 @@ html, body {
     content: "";
     position: absolute;
     top: -3px;
-    /* bottom: 0px; */
     left: -3px;
     width: 0%;
     height: 111%;
@@ -405,9 +401,6 @@ html, body {
 }
 
 @media (max-width: 991px) {
-    .kairos-images {
-        padding: 0 10%;
-    }
     .kairos-info {
         padding: 2rem 10% 4rem 10%;
         height: 100%;
@@ -425,9 +418,6 @@ html, body {
 }
 
 @media (max-width: 350px) {
-    .kairos-images {
-        padding: 0 10%;
-    }
     .kairos-info {
         padding: 2rem 10% 4rem 10%;
         height: 100%;
@@ -470,12 +460,13 @@ html, body {
 }
 
 .mision-vision {
-    padding: 7rem;
+    padding: 7rem 7rem 3rem 7rem;
+    background-color: #FFF;
 }
 
 .mision-vision h2 {
     font-size: 2.82rem;
-    font-family: Poppins Light;
+    font-family: Poppins SemiBold;
     letter-spacing: 5px;
 }
 
@@ -527,6 +518,42 @@ html, body {
     .mision-vision div p {
         margin: 0 1rem 3rem 1rem;
     }
+}
+
+.home-nosotros {
+    padding: 0 7rem 7rem 7rem;
+    background-color: #FFF;
+}
+
+.home-nosotros h2 {
+    font-size: 2.82rem;
+    font-family: Poppins SemiBold;
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+}
+
+.home-nosotros .cola {
+    width: 13rem;
+}
+
+.data-text {
+    font-size: 1.1rem;
+    height: 6.5rem;
+    font-family: Poppins Light;
+    color: #2A3440;
+    padding: 1rem;
+    text-align: center;
+}
+
+.home-numbers {
+    background-color: #2A3440;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: #FFF;
+    padding: 0.4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Poppins SemiBold;
 }
 
 .home-proyectos {
@@ -931,10 +958,6 @@ html, body {
     padding: 10%;
 }
 
-.somos h3, .somos p {
-    /* text-align: center; */
-}
-
 .somos h3 {
     font-family: Poppins SemiBold;
     font-size: 1.4rem;
@@ -1313,11 +1336,6 @@ html, body {
 
 /* MODAL MODAL MODAL */
 
-.show {
-    display: block;
-    background-color: rgba(0,0,0,0.5);
-}
-
 .modal-body {
     position: relative;
     padding: 0rem;
@@ -1357,14 +1375,10 @@ html, body {
     padding: 10% 10% 10% 10%;
 }
 
-.kairos > .amenities {
-    padding: 0;
-}
-
 .kairos h1 {
     font-family: Poppins Light;
-    font-size: 2rem;
-    letter-spacing: 18px;
+    font-size: 1.8rem;
+    letter-spacing: 15px;
     color: #C37B52;
 }
 
@@ -1387,6 +1401,7 @@ html, body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    padding-right: 1rem;
 }
 
 .kairos-content .row .col-lg-6:first-child {
@@ -1400,7 +1415,7 @@ html, body {
 }
 
 .kairos-text {
-    padding: 0 0 0 2rem !important;
+    padding: 0 0 0 1rem !important;
     display: table-cell;
     vertical-align: middle;
 }
@@ -1441,10 +1456,11 @@ html, body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    padding-left: 1rem;
 }
 
 .kairos-text-2 {
-    padding: 0 2rem 0 0 !important;
+    padding: 0 1rem 0 0 !important;
     display: table-cell;
     vertical-align: middle;
 }
@@ -1489,10 +1505,6 @@ html, body {
     margin: 2rem auto;
 }
 
-.amenities {
-    /* padding: 3rem 0; */
-}
-
 .amenities h2 {
     font-family: Poppins Light;
     font-size: 1.7rem;
@@ -1509,6 +1521,7 @@ html, body {
 .amenities-carousel img {
     height: 330px;
     margin: 0 0.4rem;
+    border-radius: 5px;
 }
 
 .amenities-carousel img:hover {
@@ -1527,8 +1540,4 @@ html, body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.contacts {
-
 }
