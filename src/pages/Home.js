@@ -5,14 +5,12 @@ import inovaExperiencia from '../assets/videos/inova_experiencia.mp4'
 import inovaExperienciaOgg from '../assets/videos/inova_experiencia.ogg'
 
 import logo from '../assets/images/logo.svg'
-import building2 from '../assets/images/building2.png'
 import building3 from '../assets/images/building3.jpg'
 import building5 from '../assets/images/building5.png'
 import building6 from '../assets/images/building6.png'
 import building7 from '../assets/images/building7.png'
 import building8 from '../assets/images/building8.png'
 import kairos from '../assets/images/kairos.svg'
-import logo3 from '../assets/images/logo3.svg'
 
 import MisionVision from '../components/MisionVision'
 import ConctactForm from '../components/ContactForm'
@@ -81,9 +79,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>     
-            {/* <section className="lights">
-                <img src={logo3} className="logo" alt="logo" />
-            </section> */}
             <section className="home-proyectos">
                 <h2>PROYECTOS</h2>
                 <img src={building5} id="b-5" alt="building" />
