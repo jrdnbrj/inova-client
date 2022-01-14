@@ -946,12 +946,17 @@ html, body {
 /* QUIENES SOMOS QUIENES SOMOS */
 
 .us-header {
-    background-image: url('../assets/images/quienes-somos.png');
+    background-image: url('../assets/images/quienes-somos.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 0;
     padding-top: 60%;
+}
+
+#inova-sensaciones {
+    width: 100%;
+    height: 100%;
 }
 
 .somos {
