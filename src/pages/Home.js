@@ -89,7 +89,9 @@ const Home = () => {
                     <span>SIGUIENTE</span>
                 </button>
             </section>
-            <MisionVision />
+            <section className="mision-vision-home">
+                <MisionVision />
+            </section>
             <section className="home-nosotros">
                 <h2>MÁS SOBRE NOSOTROS</h2>
                 <div className="row">

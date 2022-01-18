@@ -41,26 +41,6 @@ const Proyectos = () => {
                         <p>Edificio diseñado y pensado para brindar comodidad y exclusividad ubicado en el valle de Cumbayá, cuenta con 15 unidades de departamentos en 3 pisos, su diseño de vanguardia responde a la vida práctica y cómoda del valle del Cumbayá.</p>
                     </div>
                 </div>
-                {/* <div className="row" id="row-correction">
-                    <div className="col-lg-6 col-sm-12 card">
-                        <div className="card--image">
-                            <img src={building11} alt="building11" />
-                        </div>
-                        <div className="card--info info--1">
-                            <span className="info--text">Accesible</span>
-                            <div className="icon">
-                                <i className="bi bi-plus"></i>
-                            </div>
-                            <div className="info--image">
-                                <img src={building11} alt="info" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-sm-12">
-                        <h2>VISTA GRANDE</h2>
-                        <p>Quieres un nuevo concepto para tus fotos? nosotros te damos las herramientas y visión de tu imagen quieres un nuevo concepto para tus fotos? nosotros te damos las herramientas y visión de tu imagen</p>
-                    </div>
-                </div> */}
                 <div className="row" id="row-correction">
                     <div className="col-lg-6 col-sm-12 card">
                         <div className="card--image">
