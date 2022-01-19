@@ -1,11 +1,10 @@
 import { useEffect } from 'react';
 import MisionVision from '../components/MisionVision';
 
-// import logo3 from '../assets/images/logo3.svg'
-import somos1 from '../assets/images/somos1.png'
-import somos2 from '../assets/images/somos2.png'
-import somos3 from '../assets/images/somos3.png'
-import somos4 from '../assets/images/somos4.png'
+import somos1 from '../assets/images/somos1.jpg'
+import somos2 from '../assets/images/somos2.jpg'
+import somos3 from '../assets/images/somos3.jpg'
+import somos4 from '../assets/images/somos4.jpg'
 import quienes from '../assets/images/quienes.jpg'
 import inovaSensaciones from '../assets/videos/inova_sensaciones.mp4'
 

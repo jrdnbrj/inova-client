@@ -93,12 +93,12 @@ html, body {
     }
 }
 
-.scrolled-down{
+.scrolled-down {
     transform: translateY(-100%); 
     transition: all 0.4s ease-in-out;
 }
 
-.scrolled-up{
+.scrolled-up {
     transform: translateY(0); 
     transition: all 0.3s ease-in-out;
 }
@@ -908,6 +908,11 @@ html, body {
     text-decoration: none;
 }
 
+.footer a {
+    color: #FFF;
+    text-decoration: none;
+}
+
 .footer span, .rrd-link {
     font-family: Poppins Light;
     font-size: 1rem;
@@ -1138,6 +1143,8 @@ html, body {
 .somos-container img {
     width: 100%;
     transition: all 0.3s ease-in-out;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .somos-container img:hover {
@@ -1709,6 +1716,11 @@ html, body {
 }
 
 /* MODAL MODAL MODAL */
+
+.show {
+    display: block;
+    background-color: rgba(0,0,0,0.5);
+}
 
 .modal-body {
     position: relative;

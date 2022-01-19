@@ -1,12 +1,6 @@
 import ContactForm from '../components/ContactForm'
 
-import contactImage from '../assets/images/contactos.jpg'
 
-
-const Contactos = () => {
-    return (
-        <ContactForm image={contactImage} />
-    )
-}
+const Contactos = () => <ContactForm />
 
 export default Contactos

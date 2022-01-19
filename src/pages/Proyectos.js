@@ -1,5 +1,5 @@
-import building10 from '../assets/images/building10.png'
-import building12 from '../assets/images/building12.png'
+import building6 from '../assets/images/building6.jpg'
+import building12 from '../assets/images/building12.jpg'
 import pool from '../assets/images/pool.jpg'
 import galeria4 from '../assets/images/galeria4.jpg'
 import building13 from '../assets/images/building13.jpg'
@@ -15,7 +15,7 @@ const Proyectos = () => {
                 <div className="row" id="row-correction">
                     <div className="col-lg-6 col-sm-12 card">
                         <div className="card--image">
-                            <img src={building10} alt="building10" />
+                            <img src={building6} alt="building10" />
                         </div>
                         <div className="card--info info--1">
                             <span className="info--text">Espacioso</span>
@@ -23,7 +23,7 @@ const Proyectos = () => {
                                 <i className="bi bi-plus"></i>
                             </div>
                             <div className="info--image">
-                                <img src={building10} alt="info" />
+                                <img src={building6} alt="info" />
                             </div>
                         </div>
                         <div className="card--info info--2">
@@ -32,7 +32,7 @@ const Proyectos = () => {
                                 <i className="bi bi-plus"></i>
                             </div>
                             <div className="info--image">
-                                <img src={building10} alt="info" />
+                                <img src={building6} alt="info" />
                             </div>
                         </div>
                     </div>
