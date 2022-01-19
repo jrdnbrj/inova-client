@@ -103,18 +103,18 @@ const Proyectos = () => {
                             
                             <h2>Edificio CIARA</h2>                    
                             <h3>Vista Grande</h3>
-                            <p>Exclusivo edificio de vivienda de lujo dentro de la urbanización Vista Grande. Esta compuesto por 6 departamentos.</p>
+                            <p className="last-text">Exclusivo edificio de vivienda de lujo dentro de la urbanización Vista Grande. Esta compuesto por 6 departamentos.</p>
                         </div>
                     </div>
                 </div>
                 <div className="row edificios-row" id="row-correction">
-                    <div className="col-lg-6 edificios-col">
+                    <div className="col-lg-6 order-2 order-lg-1 edificios-col">
                         <div className="edificios-construidos">
                             <h2>PROYECTOS CONSTRUIDOS</h2>                    
-                            <p>Con amplia experiencia a nivel gerencial, principalmente en el área comercial. Hemos liderado grandes proyectos inmobiliarios a lo largo de estos últimos 20 años en la ciudad de Quito, coordinando en la elaboración, desarrollo y ejecución de proyectos y estrategias para la eficaz construcción y comercialización.</p>
+                            <p className="last-text">Con amplia experiencia a nivel gerencial, principalmente en el área comercial. Hemos liderado grandes proyectos inmobiliarios a lo largo de estos últimos 20 años en la ciudad de Quito, coordinando en la elaboración, desarrollo y ejecución de proyectos y estrategias para la eficaz construcción y comercialización.</p>
                         </div>
                     </div>
-                    <div className="col-lg-6 edificios-col">
+                    <div className="col-lg-6 order-1 edificios-col">
                         <img src={building13} alt="pool" />
                     </div>
                 </div>
@@ -126,7 +126,7 @@ const Proyectos = () => {
                         <div className="edificios-text">
                             <h2>PROYECTO EN CUMBAYÁ</h2>                    
                             <p>En noviembre del 2015, INOVA CONSTRUCTORES recibió el proyecto La Victoria con más de 100 unidades habitacionales, diseñado por el renombrado arquitecto Felipe Londoño. El proyecto ya llevaba construido la primera fase, 13 casas diseñadas con una arquitectura innovadora que tomaba como protagonista a una sala comedor doble-altura, acompañadas de balcones aterrazados al estilo mediterráneo.</p>
-                            <p className="cumbaya-text">La arquitectura tomó fortaleza en el desnivel del terreno, la cual utilizaba un escalonamiento gradual para dar una hermosa vista a cada uno de los departamentos. Proyecto exclusivo nos permitió tener un reto importante para la comercialización. Siendo esto una de las características distintivas de proyecto, escogimos estrategias para la comercialización brindando un proyecto con estrategia exitosa.</p>
+                            <p className="last-text">La arquitectura tomó fortaleza en el desnivel del terreno, la cual utilizaba un escalonamiento gradual para dar una hermosa vista a cada uno de los departamentos. Proyecto exclusivo nos permitió tener un reto importante para la comercialización. Siendo esto una de las características distintivas de proyecto, escogimos estrategias para la comercialización brindando un proyecto con estrategia exitosa.</p>
                         </div>
                     </div>
                 </div>
