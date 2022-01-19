@@ -51,8 +51,13 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contactos">Contactos</Link>
                             </li>
-                            <li className="nav-item">
-                                <span className="nav-link no-link">0998799739</span>
+                            <li className="nav-item no-link">
+                                <a 
+                                    href="https://wa.me/593998799739"
+                                    target="_blank" rel="noreferrer"
+                                >
+                                    <span className="nav-link">0998799739</span>
+                                </a>
                             </li>
                         </ul>
                     </div>

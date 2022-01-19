@@ -36,9 +36,24 @@ const Home = () => {
                     <h1>CONSTRUYENDO HOGARES</h1>
                 </div>
                 <section className="socials">
-                    <i className="bi bi-facebook" />
-                    <i className="bi bi-whatsapp" />
-                    <i className="bi bi-instagram" />
+                    <a 
+                        href="https://www.facebook.com/Inova-Constructores-109525017849374/"
+                        target="_blank" rel="noreferrer"
+                    >
+                        <i className="bi bi-facebook" />
+                    </a>
+                    <a 
+                        href="https://wa.me/593998799739"
+                        target="_blank" rel="noreferrer"
+                    >
+                        <i className="bi bi-whatsapp" />
+                    </a>
+                    <a 
+                        href="https://www.instagram.com/inova_constructores/" 
+                        target="_blank" rel="noreferrer"
+                    >
+                        <i className="bi bi-instagram" />
+                    </a>
                 </section>
             </section>
             <section className="home-info">
@@ -47,10 +62,10 @@ const Home = () => {
                 <p>Somos una compañía constructora que cuenta con amplia experiencia en la ejecución de proyectos de calidad y con la capacidad de enfrentar nuevos retos los cuales nos impulsan a seguir creciendo como una empresa innovadora que brinda las mejores condiciones de vida a los quiteños.</p>
                 <Link to="/contactos">
                     <button id="llamanos">
-                        <span>QUIENES SOMOS</span>
+                        <span>QUIÉNES SOMOS</span>
                     </button>
                 </Link>
-                <Link to="/galeria">
+                <Link to="/proyectos">
                     <button id="departamentos">
                         <span>PROYECTOS</span>
                     </button>

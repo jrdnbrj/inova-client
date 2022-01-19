@@ -16,6 +16,7 @@ const Footer = () => {
                 <Link className="rrd-link" to="/proyectos">Proyectos</Link>
                 <Link className="rrd-link" to="/contactos">Contactos</Link>
                 <Link className="rrd-link" to="/galeria">Galería</Link>
+                <Link className="rrd-link" to="/kairos">Kairos</Link>
             </section>
             <section className="col-lg col-12 col-sm-6">
                 <h3>CONTÁCTENOS</h3>
@@ -24,9 +25,24 @@ const Footer = () => {
             </section>
             <section className="col-lg col-12 col-sm-6">
                 <h3>CAPACITACIONES</h3>
-                <i className="bi bi-whatsapp" />
-                <i className="bi bi-facebook" />
-                <i className="bi bi-instagram" />
+                <a 
+                    href="https://wa.me/593998799739"
+                    target="_blank" rel="noreferrer"
+                >
+                    <i className="bi bi-whatsapp" />
+                </a>
+                <a 
+                    href="https://www.facebook.com/Inova-Constructores-109525017849374/"
+                    target="_blank" rel="noreferrer"
+                >
+                    <i className="bi bi-facebook" />
+                </a>
+                <a 
+                    href="https://www.instagram.com/inova_constructores/" 
+                    target="_blank" rel="noreferrer"
+                >
+                    <i className="bi bi-instagram" />
+                </a>
             </section>
         </section>
     </>

@@ -69,7 +69,7 @@ const QuienesSomos = () => {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                             </div>
                         </div>
-                        <h3>ALFONSO</h3>
+                        <h3 className="somos-names">ALFONSO</h3>
                     </div>
                     <div className="col-lg-3 col-12 col-sm-6">
                         <div className="somos-container">
@@ -80,7 +80,7 @@ const QuienesSomos = () => {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                             </div>
                         </div>
-                        <h3>WENDY</h3>
+                        <h3 className="somos-names">WENDY</h3>
                     </div>
                     <div className="col-lg-3 col-12 col-sm-6">
                         <div className="somos-container">
@@ -91,7 +91,7 @@ const QuienesSomos = () => {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                             </div>
                         </div>
-                        <h3>ELIZABETH</h3>
+                        <h3 className="somos-names" id="elizabeth">ELIZABETH</h3>
                     </div>
                     <div className="col-lg-3 col-12 col-sm-6">
                         <div className="somos-container">
@@ -102,7 +102,7 @@ const QuienesSomos = () => {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                             </div>
                         </div>
-                        <h3>GUILLERMO</h3>
+                        <h3 className="somos-names" id="guillermo">GUILLERMO</h3>
                     </div>
                 </div>
             </section>
